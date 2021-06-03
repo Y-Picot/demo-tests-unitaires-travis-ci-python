@@ -4,14 +4,12 @@ import bibliotheque
 class UneClasseDeTest(unittest.TestCase):
         
     def setUp(self):
-        print("Avant le test")
         self.a = 1
         self.b = 2    
         self.c = 50 
         self.d = 0
 
     def tearDown(self):
-        print("Après le test")
         a = None
         b = None 
         c = None

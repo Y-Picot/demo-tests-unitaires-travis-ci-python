@@ -1,5 +1,5 @@
 import bibliotheque
-
+import unitTests
 
 #Main
 a = 1
@@ -14,3 +14,4 @@ print(bibliotheque.division(a,d))
 print(bibliotheque.carree(b))
 print(bibliotheque.racineCarree(c))
 print(bibliotheque.cosinus(a))
+unitTests

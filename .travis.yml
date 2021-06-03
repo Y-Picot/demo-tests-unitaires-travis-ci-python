@@ -1,10 +1,20 @@
 language: python
 python:
-  - "2.7"  
-  - "3.6"      # current default Python on Travis CI 
+  - "3.7"  
   - "3.9"
 
-install: "pip install -r requirements.txt"
+before_install:
+  - python -m pip install --upgrade pip
+  - pip install -U pip
+  - pip freeze > requirements.txt  
+  - python --version
+  - pip install codecov
+  
+install:
+  - pip install -r requirements.txt --use-feature=2020-resolver
 
 script:
-  - pytest
+ - coverage run unitTests.py
+ 
+after_success:
+ - codecov
