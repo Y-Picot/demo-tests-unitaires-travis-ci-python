@@ -1,0 +1,23 @@
+build-job:
+  stage: build
+  script:
+    - python -m pip install --upgrade pip
+    - pip install -U pip    
+    - pip install codecov
+    - python --version    
+    
+test-job1:
+  stage: test
+  script:
+    - pip freeze > requirements.txt  
+    - pip install -r requirements.txt --use-feature=2020-resolver
+
+test-job2:
+  stage: test
+  script:
+    - coverage run unitTests.py
+ 
+test-job3:
+  stage: test
+  script:
+    - codecov
