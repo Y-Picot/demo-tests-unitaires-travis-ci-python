@@ -1,6 +1,6 @@
 # Démonstration Tests Unitaires et Travis CI avec Python
 
-[![Build Status](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://shields.io/)
+[![Tests](https://github.com/Y-Picot/demo-tests-unitaires-travis-ci-python/actions/workflows/tests.yml/badge.svg)](https://github.com/Y-Picot/demo-tests-unitaires-travis-ci-python/actions/workflows/tests.yml)
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -11,14 +11,15 @@ Projet de démonstration pour apprendre l'intégration continue avec Travis CI e
 Ce projet a été créé pour apprendre et démontrer :
 - **Tests unitaires Python** avec unittest
 - **Intégration continue** avec Travis CI
-- **Pipeline CI/CD** avec GitLab CI  
+- **Pipeline CI/CD** avec GitLab CI
+- **GitHub Actions** pour l'automatisation des tests
 - **Bonnes pratiques** de développement Python
 - **Documentation** de projet open-source
 
 ### Contenu de la démonstration
 - **Bibliothèque exemple** : fonctions mathématiques simples
 - **Tests complets** : couverture de toutes les fonctions
-- **Configuration CI** : Travis CI et GitLab CI prêts à l'emploi
+- **Configuration CI** : Travis CI, GitLab CI et GitHub Actions prêts à l'emploi
 
 ## 🛠️ Technologies utilisées
 
@@ -27,6 +28,7 @@ Ce projet a été créé pour apprendre et démontrer :
 - **Intégration Continue** :
   - Travis CI
   - GitLab CI
+  - GitHub Actions
 - **Documentation** : Docstrings conformes PEP 257
 
 ## 📋 Prérequis
@@ -77,14 +79,17 @@ python -m unittest unitTests.py -v
 
 ```
 demo-tests-unitaires-travis-ci-python/
-├── bibliotheque.py      # Bibliothèque exemple avec fonctions mathématiques
-├── main.py             # Démonstration d'utilisation
-├── unitTests.py        # Tests unitaires complets  
-├── README.md          # Documentation du projet
-├── LICENSE            # Licence MIT
-├── .gitignore         # Fichiers à ignorer par Git
-├── .travis.yml        # Configuration Travis CI
-└── .gitlab-ci.yml     # Configuration GitLab CI
+├── bibliotheque.py          # Bibliothèque exemple avec fonctions mathématiques
+├── main.py                 # Démonstration d'utilisation
+├── unitTests.py            # Tests unitaires complets  
+├── README.md              # Documentation du projet
+├── LICENSE                # Licence MIT
+├── .gitignore             # Fichiers à ignorer par Git
+├── .travis.yml            # Configuration Travis CI
+├── .gitlab-ci.yml         # Configuration GitLab CI
+└── .github/
+    └── workflows/
+        └── tests.yml      # Configuration GitHub Actions
 ```
 
 ## 🧪 Tests
