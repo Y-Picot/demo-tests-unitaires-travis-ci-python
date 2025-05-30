@@ -1,18 +1,24 @@
-# Bibliothèque de Calculs Mathématiques
+# Démonstration Tests Unitaires et Travis CI avec Python
 
 [![Build Status](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://shields.io/)
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-Une bibliothèque Python simple et efficace pour effectuer des calculs mathématiques de base et des opérations trigonométriques. Ce projet démontre l'utilisation des tests unitaires et de l'intégration continue avec Travis CI et GitLab CI.
+Projet de démonstration pour apprendre l'intégration continue avec Travis CI et GitLab CI en utilisant des tests unitaires Python. Ce projet utilise une bibliothèque de calculs mathématiques simples comme exemple pratique pour illustrer les bonnes pratiques de CI/CD.
 
-## 📋 Résumé du projet
+## 🎯 Objectif pédagogique
 
-Cette bibliothèque fournit un ensemble de fonctions mathématiques essentielles :
-- **Opérations arithmétiques** : addition, soustraction, multiplication, division
-- **Fonctions avancées** : carré, racine carrée, cosinus
-- **Gestion des erreurs** : division par zéro sécurisée
-- **Tests complets** : couverture de toutes les fonctions avec unittest
+Ce projet a été créé pour apprendre et démontrer :
+- **Tests unitaires Python** avec unittest
+- **Intégration continue** avec Travis CI
+- **Pipeline CI/CD** avec GitLab CI  
+- **Bonnes pratiques** de développement Python
+- **Documentation** de projet open-source
+
+### Contenu de la démonstration
+- **Bibliothèque exemple** : fonctions mathématiques simples
+- **Tests complets** : couverture de toutes les fonctions
+- **Configuration CI** : Travis CI et GitLab CI prêts à l'emploi
 
 ## 🛠️ Technologies utilisées
 
@@ -32,8 +38,8 @@ Cette bibliothèque fournit un ensemble de fonctions mathématiques essentielles
 
 ### Clonage du dépôt
 ```bash
-git clone https://github.com/Y-Picot/bibliotheque-calculs-mathematiques.git
-cd bibliotheque-calculs-mathematiques
+git clone https://github.com/Y-Picot/demo-tests-unitaires-travis-ci-python.git
+cd demo-tests-unitaires-travis-ci-python
 ```
 
 ### Vérification de l'installation
@@ -70,11 +76,11 @@ python -m unittest unitTests.py -v
 ## 📁 Structure du projet
 
 ```
-bibliotheque-calculs-mathematiques/
-├── bibliotheque.py      # Bibliothèque principale avec toutes les fonctions
+demo-tests-unitaires-travis-ci-python/
+├── bibliotheque.py      # Bibliothèque exemple avec fonctions mathématiques
 ├── main.py             # Démonstration d'utilisation
-├── unitTests.py        # Tests unitaires complets
-├── README.md          # Documentation
+├── unitTests.py        # Tests unitaires complets  
+├── README.md          # Documentation du projet
 ├── LICENSE            # Licence MIT
 ├── .gitignore         # Fichiers à ignorer par Git
 ├── .travis.yml        # Configuration Travis CI
