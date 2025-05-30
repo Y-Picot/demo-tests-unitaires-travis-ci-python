@@ -1,0 +1,36 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8, 3.9, '3.10', 3.11]
+
+    steps:
+    - name: Checkout du code
+      uses: actions/checkout@v4
+
+    - name: Configuration Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Installation des dépendances
+      run: |
+        python -m pip install --upgrade pip
+        # Aucune dépendance externe requise (utilise uniquement la bibliothèque standard)
+
+    - name: Exécution des tests unitaires
+      run: |
+        python -m unittest unitTests.py -v
+
+    - name: Test de la démonstration
+      run: |
+        python main.py
