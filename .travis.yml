@@ -1,20 +1,21 @@
 language: python
 python:
-  - "3.7"  
+  - "3.8"
   - "3.9"
+  - "3.10"
 
 before_install:
   - python -m pip install --upgrade pip
-  - pip install -U pip
-  - pip freeze > requirements.txt  
-  - python --version
-  - pip install codecov
-  
+
 install:
-  - pip install -r requirements.txt --use-feature=2020-resolver
+  - pip install coverage
 
 script:
- - coverage run unitTests.py
- 
-after_success:
- - codecov
+  - python -m unittest unitTests.py -v
+  - coverage run -m unittest unitTests.py
+  - coverage report -m
+
+# Variables d'environnement sécurisées (à configurer manuellement sur Travis)
+# CODECOV_TOKEN: [À définir dans les paramètres Travis]
+
+cache: pip
