@@ -121,14 +121,6 @@ python -m unittest unitTests.py -v
 - Inclure des tests pour toute nouvelle fonctionnalité
 - Maintenir la couverture de tests à 100%
 
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
-## 👥 Auteur
-
-- **Y-Picot** - Développeur principal
-
 ## 🔗 Liens utiles
 
 - [Documentation Python unittest](https://docs.python.org/3/library/unittest.html)
@@ -138,3 +130,15 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 ---
 
 **Version actuelle** : 1.0.0
+
+## 📄 Licence
+
+Licence MIT - voir [LICENSE](LICENSE) pour les détails.
+
+## 👤 Auteur
+
+**Y-Picot** - [GitHub](https://github.com/Y-Picot)
+
+---
+
+⭐ Projet utile ? N'hésitez pas à lui donner une étoile !
